@@ -1,0 +1,18 @@
+h1,h2, p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}

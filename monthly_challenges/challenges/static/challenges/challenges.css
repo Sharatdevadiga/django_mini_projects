@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 50rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 25rem;
+    background-color: #eee;
+}
+
+li{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    padding-bottom: 0.5rem;
+    color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    text-decoration: none;  /* Add this to remove underlines */
+    color: inherit;         /* Inherit color from parent li */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a:hover{
+    color: #000;
+    text-decoration: none;  /* Changed from underline to none */
+}
+
+li a:active{
+    color: #000;
+    text-decoration: none;
+}

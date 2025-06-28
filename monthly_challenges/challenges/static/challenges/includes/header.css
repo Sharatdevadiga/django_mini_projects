@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+    height: 4rem;
+    background-color: #333;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;              /* Apply white color to the anchor tag */
+    text-decoration: none;    /* Remove underline */
+    font-weight: bold;        /* Optional: make it bold */
+    font-size: 1.1rem;        /* Optional: increase font size */
+}
+
+header nav a:hover {
+    color: #ccc;              /* Optional: lighter color on hover */
+}
+
+header nav a:visited {
+    color: #fff;              /* Keep white color for visited links */
+}
