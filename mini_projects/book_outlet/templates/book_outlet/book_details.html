@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}{{ book.title }} - Book Outlet{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'book_outlet/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container book-details">
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Rating:</strong> <span class="rating">{{ book.rating }}</span> / 5</p>
+    <p><strong>Bestseller:</strong> {% if book.is_bestselling %}<span class="bestseller">Yes</span>{% else %}No{% endif %}</p>
+    <a href="/book_outlet/" class="back-link">&larr; Back to Book List</a>
+</div>
+{% endblock %}

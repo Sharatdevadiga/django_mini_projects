@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}Book Outlet{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'book_outlet/styles.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Welcome to Book Outlet</h1>
+    <p>Your one-stop shop for the best books!</p>
+    
+    <div class="book-list">
+        <ul>
+            {% for book in books %}
+            <li>
+                <a href="{{ book.get_absolute_url }}">
+                    <strong>{{ book.title }}</strong> by {{ book.author }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+

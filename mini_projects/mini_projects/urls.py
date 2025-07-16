@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('challenges/', include("challenges.urls"))
+    path('challenges/', include("challenges.urls")),
+    path('book_outlet/', include("book_outlet.urls")),
+    path('', views.index, name='index'),  # Default route for the project
 ]
